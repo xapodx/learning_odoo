@@ -7,4 +7,4 @@ allowance_transport (Float) – Transport Allowance
 allowance_medical (Float) – Medical Allowance
 allowance_food (Float) – Food Allowance
 bonus_percentage (Float) – Bonus Percentage (if any)
-is_shift (Float) – Bonus Percentage 
+allowance_shift (boolean) – Bonus Percentage 
