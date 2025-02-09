@@ -13,12 +13,24 @@
         </field>
 
     </record>
+    <record id="property_view_search" model="ir.ui.view">
+        <field name="name">property search</field>
+        <field name="model">property</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="bouns"/>
+            </search>
+        </field>
+
+    </record>
      <record id="property_view_form" model="ir.ui.view">
         <field name="name">property Form</field>
         <field name="model">property</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
+
                     <group>
                         <group>
                             <field name="name"/>
