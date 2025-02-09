@@ -1,5 +1,5 @@
 📌 Employee Grade Model (hr.grade)
-A single model that includes grade details, salary ranges, allowances, and promotion criteria.
+
 
 🛠 Fields:
 name (Char) – Grade Name (e.g., "Grade A", "Grade B")
