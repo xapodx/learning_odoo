@@ -1,14 +1,10 @@
 📌 Employee Grade Model (hr.grade)
-A single model that includes grade details, salary ranges, allowances, and promotion criteria.
 
 🛠 Fields:
 name (Char) – Grade Name (e.g., "Grade A", "Grade B")
-code (Char) – Unique Grade Code (e.g., "GRD001")
-salary_min (Float) – Minimum Salary for Grade
-salary_max (Float) – Maximum Salary for Grade
 allowance_housing (Float) – Housing Allowance
 allowance_transport (Float) – Transport Allowance
 allowance_medical (Float) – Medical Allowance
+allowance_food (Float) – Food Allowance
 bonus_percentage (Float) – Bonus Percentage (if any)
-promotion_criteria (Text) – Conditions for Promotion
-is_active (Boolean) – Active/Inactive Status
+allowance_shift (boolean) – Bonus Percentage 
