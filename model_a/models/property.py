@@ -8,8 +8,6 @@ class property(models.Model):
     housing = fields.Float()
     transport = fields.Float()
     mediacl = fields.Float()
-    shift = fields.Boolean()
-    not_shift = fields.Boolean()
     bouns = fields.Float()
 
 

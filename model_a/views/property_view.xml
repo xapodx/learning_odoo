@@ -8,8 +8,6 @@
                 <field name="housing"/>
                 <field name="transport"/>
                 <field name="mediacl"/>
-                <field name="shift"/>
-                <field name="not_shift"/>
                 <field name="bouns"/>
             </tree>
         </field>
