@@ -11,4 +11,4 @@ allowance_transport (Float) – Transport Allowance
 allowance_medical (Float) – Medical Allowance
 bonus_percentage (Float) – Bonus Percentage (if any)
 promotion_criteria (Text) – Conditions for Promotion
-is_active (Boolean) – 
+is_active (Boolean) – Active/Inactive Status
