@@ -3,7 +3,7 @@
     'author': "Abdulrahman",
     'version': '17.0.0.1',
     'category': '',
-    'depends': ['base'],
+    'depends': ['base','mail'],
     'data':[
         'security/ir.model.access.csv',
         'views/base_menu.xml',
