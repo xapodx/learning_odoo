@@ -1,12 +1,9 @@
 📌 Employee Grade Model (hr.grade)
 
-
 🛠 Fields:
 name (Char) – Grade Name (e.g., "Grade A", "Grade B")
-code (Char) – Unique Grade Code (e.g., "GRD001")
 allowance_housing (Float) – Housing Allowance
 allowance_transport (Float) – Transport Allowance
 allowance_medical (Float) – Medical Allowance
 allowance_food (Float) – Food Allowance
 bonus_percentage (Float) – Bonus Percentage (if any)
-is_active (Boolean) – Active/Inactive Status
