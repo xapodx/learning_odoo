@@ -1,3 +1,5 @@
+from Demos.mmapfile_demo import offset
+
 from odoo import models , fields, api
 from odoo.exceptions import ValidationError
 
@@ -32,5 +34,19 @@ class property(models.Model):
         print("inside")
         return res
 
+    @api.model #read fonk
+    def _search(self,domain,offset=0,limit=None,order=None,access_rights_uid=None):
+        res = super(property, self)._search(domain,offset=0,limit=None,order=None,access_rights_uid=None)
+        print("inside, from search")
+        return res
 
-    
+
+    def write(self,vals): #update fonk
+        res=super(property,self).write(vals)
+        print("inside, from write")
+        return res
+
+    def unlink(self): #delet fonk
+        res=super(property,self).unlink()
+        print("inside, unlink write")
+        return res
