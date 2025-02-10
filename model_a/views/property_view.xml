@@ -3,7 +3,7 @@
         <field name="name">property Tree</field>
         <field name="model">property</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree multi_edit="1" create="1" edit="1" delete="1">
                 <field name="name"/>
                 <field name="housing"/>
                 <field name="transport"/>
