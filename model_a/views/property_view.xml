@@ -33,9 +33,12 @@
             <form>
                 <sheet>
                     <header>
-                        <button name="action_draft" type="object" class="btn-primary" string="Set To Draft"/>
-                        <button name="action_pending" type="object" class="btn-secondary" string="Set To Pending"/>
-                        <button name="action_approved" type="object" class="btn-success" string="Set To Approved"/>
+                        <button name="action_draft" type="object" class="btn-primary" string="Set To Draft"
+                                invisible="state == 'draft'"/>
+                        <button name="action_pending" type="object" class="btn-secondary" string="Set To Pending"
+                                invisible="state != 'draft' "/>
+                        <button name="action_approved" type="object" class="btn-success" string="Set To Approved"
+                                invisible="state !='pending' "/>
                         <field name="state" widget="statusbar"/>
                     </header>
 
