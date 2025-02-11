@@ -7,7 +7,8 @@
     'data':[
         'security/ir.model.access.csv',
         'views/base_menu.xml',
-         'views/property_view.xml',
+        'views/jobs_view.xml',
+        'views/property_view.xml',
     ],
 
     'application': True,

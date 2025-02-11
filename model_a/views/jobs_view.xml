@@ -1,0 +1,51 @@
+<odoo>
+    <!-- Tree View -->
+    <record id="jobs_view_tree" model="ir.ui.view">
+        <field name="name">jobs Tree</field>
+        <field name="model">jobs</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="grade_id"/>
+                <field name="shift"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="jobs_view_form" model="ir.ui.view">
+        <field name="name">jobs Form</field>
+        <field name="model">jobs</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="grade_id"/>
+                        <field name="shift"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Window Action -->
+    <record id="jobs_action" model="ir.actions.act_window">
+        <field name="name">Jobs</field>
+        <field name="res_model">jobs</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <menuitem
+        id="jobs_menu_item"
+        name="Jobs"
+        parent="jobs_menu"
+        action="jobs_action"
+    />
+</odoo>

@@ -8,4 +8,9 @@
     name="Propertis"
     parent="real_state_root_menu"
     />
+    <menuitem
+    id="jobs_menu"
+    name="Jobs"
+    parent="real_state_root_menu"
+    />
 </odoo>
