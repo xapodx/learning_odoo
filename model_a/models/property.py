@@ -16,12 +16,33 @@ class property(models.Model):
     transport = fields.Float()
     mediacl = fields.Float()
     bouns = fields.Integer(required=1)
-
+    state = fields.Selection([
+        ('draft','Draft'),
+        ('pending','Pending'),
+        ('approved','Approved'),
+    ],
+        default='draft'
+    )
     _sql_constraints = [
         ('unique_name', 'UNIQUE("name")', 'Name must be unique!'),
         ('unique_bouns', 'UNIQUE(bouns)', 'Bouns must be unique!')
 
     ]
+
+    def action_draft(self):
+        for rec in self:
+            rec.state = 'draft'
+        #self.write({'state':'draft'}) we can make it this way too
+
+    def action_pending(self):
+        for rec in self:
+            rec.state = 'pending'
+
+
+    def action_approved(self):
+                for rec in self:
+                    rec.state = 'approved'
+
 
     @api.constrains('bouns')
     def _check_bouns(self):
