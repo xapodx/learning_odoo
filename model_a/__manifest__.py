@@ -10,6 +10,11 @@
         'views/jobs_view.xml',
         'views/property_view.xml',
     ],
+    'assets':{
+        'web.assets_backend':[
+            'model_a\static\src\css\property.css'
+        ]
+    },
 
     'application': True,
 

@@ -3,6 +3,7 @@ from Demos.mmapfile_demo import offset
 from odoo import models , fields, api
 from odoo.exceptions import ValidationError
 
+from odoo.odoo.tools.populate import compute
 
 
 class property(models.Model):
@@ -11,11 +12,12 @@ class property(models.Model):
     _inherit = ['mail.thread']
     _description = 'Property'
 
-    name = fields.Char(string="name",required=1)
+    name = fields.Char(string="Name",required=1)
     housing = fields.Float(default=250)
     transport = fields.Float()
     mediacl = fields.Float()
     bouns = fields.Integer(required=1)
+    total = fields.Float(compute='_compute_total',store=0,readonly=1)
     state = fields.Selection([
         ('draft','Draft'),
         ('pending','Pending'),
@@ -43,6 +45,14 @@ class property(models.Model):
                 for rec in self:
                     rec.state = 'approved'
 
+
+    @api.depends('housing','mediacl', 'transport')
+    def _compute_total(self):
+        for rec in self:
+            rec.total = rec.housing + rec.mediacl + rec.transport
+
+
+    @api.onchange('')
 
     @api.constrains('bouns')
     def _check_bouns(self):
