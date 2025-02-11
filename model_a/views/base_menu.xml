@@ -2,6 +2,7 @@
     <menuitem
     id="real_state_root_menu"
     name="Real Estate"
+    web_icon="model_a,static\description\icon.png"
     />
     <menuitem
     id="properties_menu"
@@ -13,4 +14,5 @@
     name="Jobs"
     parent="real_state_root_menu"
     />
+
 </odoo>
