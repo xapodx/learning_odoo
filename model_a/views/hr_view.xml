@@ -5,16 +5,26 @@
         <field name="inherit_id" ref="hr.view_employee_form"/>
         <field name="arch" type="xml">
             <!-- إضافة الحقل property_id بعد work_email -->
-            <field name="work_email" position="after">
-                <field name="property_id"/>
+            <field name="mobile_phone" position="before">
+                 <field name="grade_id"/>
             </field>
 
             <!-- إضافة صفحة جديدة داخل النموذج -->
             <xpath expr="//notebook" position="inside">
                 <page name="salary_info" string="Salary Details">
                     <group>
-                        <field name="salary_id"/>
-                        <field name="shift"/>
+                       <group>
+                            <field name="salary"/>
+                            <field name="shift"/>
+                            <field name="total"/>
+                       </group>
+                        <group>
+                            <field name="medical_allowance"/>
+                            <field name="transport_allowance"/>
+                            <field name="housing_allowance"/>
+                            <field name="bouns_allowance"/>
+                        </group>
+
                     </group>
 
                 </page>
