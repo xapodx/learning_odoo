@@ -73,6 +73,7 @@
         <field name="name">property action</field>
         <field name="res_model">property</field>
     </record>
+
     <menuitem
     id="property_ment_item"
     name="Properties"
