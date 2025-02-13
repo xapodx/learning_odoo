@@ -3,12 +3,14 @@
         <field name="name">property Tree</field>
         <field name="model">property</field>
         <field name="arch" type="xml">
-            <tree multi_edit="1" create="1" edit="1" delete="1">
+            <tree multi_edit="1" class="header_custom">
                 <field name="name"/>
                 <field name="housing"/>
                 <field name="transport"/>
                 <field name="mediacl"/>
+                <field name="total"/>
                 <field name="bouns"/>
+                <field name="state"/>
             </tree>
         </field>
 
@@ -21,6 +23,7 @@
                 <field name="name"/>
                 <field name="bouns"/>
 
+
             </search>
         </field>
 
@@ -31,17 +34,29 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <header>
+                        <button name="action_draft" type="object" class="btn-primary" string="Set To Draft"
+                                invisible="state == 'draft'"/>
+                        <button name="action_pending" type="object" class="btn-secondary" string="Set To Pending"
+                                invisible="state != 'draft' "/>
+                        <button name="action_approved" type="object" class="btn-success" string="Set To Approved"
+                                invisible="state !='pending' "/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
 
                     <group>
                         <group>
                             <field name="name"/>
+                            <field name="state"/>
+                            <field name="total"/>
 
                         </group>
                         <group>
-                             <field name="transport"/>
+                            <field name="transport"/>
                             <field name="mediacl"/>
-                            <field name="bouns"/>
                             <field name="housing"/>
+                            <field name="bouns"/>
+
                         </group>
                     </group>
                 </sheet>
@@ -58,6 +73,7 @@
         <field name="name">property action</field>
         <field name="res_model">property</field>
     </record>
+
     <menuitem
     id="property_ment_item"
     name="Properties"

@@ -1,4 +1,5 @@
-from . import model_a
-from . import model_b
-from . import model_c
+
 from . import property
+from . import jobs
+from . import hr
+from . import salary_info

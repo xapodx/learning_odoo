@@ -1,0 +1,24 @@
+<odoo>
+    <record id="view_employee_form_inherit" model="ir.ui.view">
+        <field name="name">hr employee view inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <!-- إضافة الحقل property_id بعد work_email -->
+            <field name="work_email" position="after">
+                <field name="property_id"/>
+            </field>
+
+            <!-- إضافة صفحة جديدة داخل النموذج -->
+            <xpath expr="//notebook" position="inside">
+                <page name="salary_info" string="Salary Details">
+                    <group>
+                        <field name="salary_id"/>
+                        <field name="shift"/>
+                    </group>
+
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
