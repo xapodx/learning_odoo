@@ -19,4 +19,4 @@ class HrEmployee(models.Model):
         for rec in self:
             rec.total = rec.housing_allowance + rec.medical_allowance + rec.transport_allowance + rec.salary
             if rec.shift:
-                rec.total += 300  # Add 300 if the shift is True
+                rec.total += 2500  # Add 300 if the shift is True

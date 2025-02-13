@@ -13,20 +13,26 @@
             <xpath expr="//notebook" position="inside">
                 <page name="salary_info" string="Salary Details">
                     <group>
-                       <group>
+                        <!-- Group 1 -->
+                        <label string="Salary Info" for="salary"/>
+                        <group>
                             <field name="salary"/>
                             <field name="shift"/>
-                            <field name="total"/>
-                       </group>
+                            <field name="total" style="color: green; font-weight: bold;"/>
+                        </group>
+
+
+                    <group>
+                        <!-- Group 2 -->
+                        <label string="Allowances" for="medical_allowance"/>
                         <group>
                             <field name="medical_allowance"/>
                             <field name="transport_allowance"/>
                             <field name="housing_allowance"/>
                             <field name="bouns_allowance"/>
                         </group>
-
                     </group>
-
+                    </group>
                 </page>
             </xpath>
         </field>
