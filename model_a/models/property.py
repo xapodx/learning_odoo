@@ -16,7 +16,7 @@ class property(models.Model):
     housing = fields.Float(default=250)
     transport = fields.Float()
     mediacl = fields.Float()
-    bouns = fields.Integer(required=1)
+    bouns = fields.Integer(required=0)
     total = fields.Float(compute='_compute_total',store=0,readonly=1)
     state = fields.Selection([
         ('draft','Draft'),
