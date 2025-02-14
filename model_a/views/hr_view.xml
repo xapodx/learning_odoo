@@ -7,10 +7,10 @@
                 <xpath expr="//tree" position="inside">
                     <field name="visa_expire"/>
                     <field name="visa_status" invisible="0"/>
+                    <field name="visa_status_color" widget="color" string="." />
                 </xpath>
             </field>
         </record>
-
 
 
     <record id="view_employee_kanban_inherit" model="ir.ui.view">
@@ -20,12 +20,14 @@
         <field name="arch" type="xml">
             <xpath expr="//templates//div//div/ul" position="inside">
                 <li>
-                  <field name="visa_expire"/>
-                  <field name="visa_status" invisible="0"/>
+                    <field name="visa_expire"/>
+                    <field name="visa_status" invisible="0"/>
+                    <field name="visa_status_color" widget="color" string="."/>
                 </li>
             </xpath>
         </field>
     </record>
+
 
 
     <record id="view_employee_form_inherit" model="ir.ui.view">
