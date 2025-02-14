@@ -10,6 +10,7 @@
         'views/jobs_view.xml',
         'views/property_view.xml',
         'views/hr_view.xml',
+        'data\sequence.xml'
 
     ],
     'assets':{
