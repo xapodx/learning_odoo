@@ -25,13 +25,13 @@ class HrEmployee(models.Model):
     ], string="Visa Status", compute='_compute_visa_status', store=True)
 
     # Field for storing the visa status color
-    visa_status_color = fields.Char(string=".", compute='_compute_visa_status_color')
+    visa_status_color = fields.Char(string=".", compute='_compute_visa_status_color',store=1)
 
     # Creating the sequence
     @api.model
     def create(self, vals):
         if vals.get('employee_ref', 'New') == 'New':
-            vals['employee_ref'] = self.env['ir.sequence'].next_by_code('emplooye_seq') or 'New'
+            vals['employee_ref'] = self.env['ir.sequence'].next_by_code('employee_seq') or 'New'
         return super(HrEmployee, self).create(vals)
 
     # Computing the total salary
