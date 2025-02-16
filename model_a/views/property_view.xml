@@ -46,16 +46,16 @@
 
                     <group>
                         <group>
-                            <field name="name"/>
-                            <field name="state"/>
-                            <field name="total"/>
+                            <field name="name" readonly="state == 'approved'"/>
+                            <field name="state"  readonly="state == 'approved'"/>
+                            <field name="total" readonly="state == 'approved'"/>
 
                         </group>
                         <group>
-                            <field name="transport"/>
-                            <field name="mediacl"/>
-                            <field name="housing"/>
-                            <field name="bouns"/>
+                            <field name="transport"  readonly="state == 'approved'"/>
+                            <field name="mediacl" readonly="state == 'approved'"/>
+                            <field name="housing" readonly="state == 'approved'"/>
+                            <field name="bouns" readonly="state == 'approved'"/>
 
                         </group>
                     </group>
