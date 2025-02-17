@@ -1,0 +1,425 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* model_a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-17 11:57+0000\n"
+"PO-Revision-Date: 2025-02-17 11:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: model_a
+#: model:ir.model.fields.selection,name:model_a.selection__hr_employee__visa_status__expired
+msgid " Expired"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields.selection,name:model_a.selection__hr_employee__visa_status__soon
+msgid " Expiring Soon"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields.selection,name:model_a.selection__hr_employee__visa_status__valid
+msgid " Valid"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_needaction
+#: model:ir.model.fields,field_description:model_a.field_property__message_needaction
+#: model:ir.model.fields,field_description:model_a.field_salary__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: model_a
+#: model_terms:ir.ui.view,arch_db:model_a.view_employee_form_inherit
+msgid "Allowances"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields.selection,name:model_a.selection__property__state__approved
+msgid "Approved"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_attachment_count
+#: model:ir.model.fields,field_description:model_a.field_property__message_attachment_count
+#: model:ir.model.fields,field_description:model_a.field_salary__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__bouns_allowance
+#: model:ir.model.fields,field_description:model_a.field_property__bouns
+msgid "Bouns"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.constraint,message:model_a.constraint_property_unique_bouns
+msgid "Bouns must be unique!"
+msgstr ""
+
+#. module: model_a
+#: model_terms:ir.ui.view,arch_db:model_a.change_state_view_form
+msgid "Cancel"
+msgstr ""
+
+#. module: model_a
+#: model:ir.actions.server,name:model_a.property_change_state_sever_action
+msgid "Change State"
+msgstr ""
+
+#. module: model_a
+#: model:ir.actions.server,name:model_a.check_visa_expiration_cron_ir_actions_server
+msgid "Check Employee Visa Expiration"
+msgstr ""
+
+#. module: model_a
+#: model_terms:ir.ui.view,arch_db:model_a.change_state_view_form
+msgid "Confirm"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__create_uid
+#: model:ir.model.fields,field_description:model_a.field_property__create_uid
+#: model:ir.model.fields,field_description:model_a.field_salary__create_uid
+#: model:ir.model.fields,field_description:model_a.field_state__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__create_date
+#: model:ir.model.fields,field_description:model_a.field_property__create_date
+#: model:ir.model.fields,field_description:model_a.field_salary__create_date
+#: model:ir.model.fields,field_description:model_a.field_state__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__display_name
+#: model:ir.model.fields,field_description:model_a.field_property__display_name
+#: model:ir.model.fields,field_description:model_a.field_salary__display_name
+#: model:ir.model.fields,field_description:model_a.field_state__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields.selection,name:model_a.selection__property__state__draft
+#: model:ir.model.fields.selection,name:model_a.selection__state__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model,name:model_a.model_hr_employee
+#: model:ir.model.fields,field_description:model_a.field_salary__employee_id
+msgid "Employee"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__employee_ref
+msgid "Employee Reference"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_follower_ids
+#: model:ir.model.fields,field_description:model_a.field_property__message_follower_ids
+#: model:ir.model.fields,field_description:model_a.field_salary__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_partner_ids
+#: model:ir.model.fields,field_description:model_a.field_property__message_partner_ids
+#: model:ir.model.fields,field_description:model_a.field_salary__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__grade_id
+#: model:ir.model.fields,field_description:model_a.field_jobs__grade_id
+#: model:ir.model.fields,field_description:model_a.field_salary__grade_id
+msgid "Grade"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__has_message
+#: model:ir.model.fields,field_description:model_a.field_property__has_message
+#: model:ir.model.fields,field_description:model_a.field_salary__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__housing_allowance
+#: model:ir.model.fields,field_description:model_a.field_property__housing
+msgid "Housing"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__id
+#: model:ir.model.fields,field_description:model_a.field_property__id
+#: model:ir.model.fields,field_description:model_a.field_salary__id
+#: model:ir.model.fields,field_description:model_a.field_state__id
+msgid "ID"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,help:model_a.field_jobs__message_needaction
+#: model:ir.model.fields,help:model_a.field_property__message_needaction
+#: model:ir.model.fields,help:model_a.field_salary__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,help:model_a.field_jobs__message_has_error
+#: model:ir.model.fields,help:model_a.field_jobs__message_has_sms_error
+#: model:ir.model.fields,help:model_a.field_property__message_has_error
+#: model:ir.model.fields,help:model_a.field_property__message_has_sms_error
+#: model:ir.model.fields,help:model_a.field_salary__message_has_error
+#: model:ir.model.fields,help:model_a.field_salary__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_is_follower
+#: model:ir.model.fields,field_description:model_a.field_property__message_is_follower
+#: model:ir.model.fields,field_description:model_a.field_salary__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: model_a
+#: model:ir.actions.act_window,name:model_a.jobs_action
+#: model:ir.ui.menu,name:model_a.jobs_menu
+#: model:ir.ui.menu,name:model_a.jobs_menu_item
+msgid "Jobs"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__write_uid
+#: model:ir.model.fields,field_description:model_a.field_property__write_uid
+#: model:ir.model.fields,field_description:model_a.field_salary__write_uid
+#: model:ir.model.fields,field_description:model_a.field_state__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__write_date
+#: model:ir.model.fields,field_description:model_a.field_property__write_date
+#: model:ir.model.fields,field_description:model_a.field_salary__write_date
+#: model:ir.model.fields,field_description:model_a.field_state__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_property__mediacl
+msgid "Mediacl"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__medical_allowance
+msgid "Medical"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_has_error
+#: model:ir.model.fields,field_description:model_a.field_property__message_has_error
+#: model:ir.model.fields,field_description:model_a.field_salary__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_ids
+#: model:ir.model.fields,field_description:model_a.field_property__message_ids
+#: model:ir.model.fields,field_description:model_a.field_salary__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_property__name
+#: model:ir.model.fields,field_description:model_a.field_salary__name
+msgid "Name"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.constraint,message:model_a.constraint_jobs_unique_name
+#: model:ir.model.constraint,message:model_a.constraint_property_unique_name
+#: model:ir.model.constraint,message:model_a.constraint_salary_unique_name
+msgid "Name must be unique!"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_needaction_counter
+#: model:ir.model.fields,field_description:model_a.field_property__message_needaction_counter
+#: model:ir.model.fields,field_description:model_a.field_salary__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_has_error_counter
+#: model:ir.model.fields,field_description:model_a.field_property__message_has_error_counter
+#: model:ir.model.fields,field_description:model_a.field_salary__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,help:model_a.field_jobs__message_needaction_counter
+#: model:ir.model.fields,help:model_a.field_property__message_needaction_counter
+#: model:ir.model.fields,help:model_a.field_salary__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,help:model_a.field_jobs__message_has_error_counter
+#: model:ir.model.fields,help:model_a.field_property__message_has_error_counter
+#: model:ir.model.fields,help:model_a.field_salary__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields.selection,name:model_a.selection__property__state__pending
+#: model:ir.model.fields.selection,name:model_a.selection__state__state__pending
+msgid "Pending"
+msgstr ""
+
+#. module: model_a
+#: model:ir.ui.menu,name:model_a.property_ment_item
+msgid "Properties"
+msgstr ""
+
+#. module: model_a
+#: model:ir.ui.menu,name:model_a.properties_menu
+msgid "Propertis"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model,name:model_a.model_property
+#: model:ir.model.fields,field_description:model_a.field_state__property_id
+msgid "Property"
+msgstr ""
+
+#. module: model_a
+#: model:ir.ui.menu,name:model_a.real_state_root_menu
+msgid "Real Estate"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_state__reason
+msgid "Reason"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_has_sms_error
+#: model:ir.model.fields,field_description:model_a.field_property__message_has_sms_error
+#: model:ir.model.fields,field_description:model_a.field_salary__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model,name:model_a.model_salary
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__salary
+msgid "Salary"
+msgstr ""
+
+#. module: model_a
+#: model_terms:ir.ui.view,arch_db:model_a.view_employee_form_inherit
+msgid "Salary Details"
+msgstr ""
+
+#. module: model_a
+#: model_terms:ir.ui.view,arch_db:model_a.view_employee_form_inherit
+msgid "Salary Info"
+msgstr ""
+
+#. module: model_a
+#: model_terms:ir.ui.view,arch_db:model_a.property_view_form
+msgid "Set To Approved"
+msgstr ""
+
+#. module: model_a
+#: model_terms:ir.ui.view,arch_db:model_a.property_view_form
+msgid "Set To Draft"
+msgstr ""
+
+#. module: model_a
+#: model_terms:ir.ui.view,arch_db:model_a.property_view_form
+msgid "Set To Pending"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__shift
+#: model:ir.model.fields,field_description:model_a.field_jobs__shift
+#: model:ir.model.fields,field_description:model_a.field_salary__shift
+msgid "Shift"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_property__state
+#: model:ir.model.fields,field_description:model_a.field_state__state
+msgid "State"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__total
+#: model:ir.model.fields,field_description:model_a.field_property__total
+msgid "Total"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__transport_allowance
+#: model:ir.model.fields,field_description:model_a.field_property__transport
+msgid "Transport"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__visa_expire
+msgid "Visa Expiry Date"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__visa_status
+msgid "Visa Status"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__website_message_ids
+#: model:ir.model.fields,field_description:model_a.field_property__website_message_ids
+#: model:ir.model.fields,field_description:model_a.field_salary__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,help:model_a.field_jobs__website_message_ids
+#: model:ir.model.fields,help:model_a.field_property__website_message_ids
+#: model:ir.model.fields,help:model_a.field_salary__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: model_a
+#: model:ir.actions.act_window,name:model_a.action_confirm
+msgid "change state"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model,name:model_a.model_jobs
+msgid "jobs"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_jobs__name
+msgid "name"
+msgstr ""
+
+#. module: model_a
+#: model:ir.actions.act_window,name:model_a.property_action
+msgid "property action"
+msgstr ""
+
+#. module: model_a
+#: model:ir.model,name:model_a.model_state
+msgid "state"
+msgstr ""
