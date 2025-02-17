@@ -8,12 +8,12 @@
             <form>
               <gorup>
                   <field name="property_id" invisible="1"/>
-                  <field name="state"  required="1">state</field>
+                  <field name="state"  required="1" label="state"/>
                   <field name="reason" required="1">reason</field>
               </gorup>
                 <footer>
-                    <button string="Confirm" specpal="confirm" class="btn-primary"/>
-                    <button string="Cancel" specpal="cancel" class="btn-secondary"/>
+                    <button string="Confirm" type="object" name="action_confirm" class="btn-primary"/>
+                    <button string="Cancel" special="cancel" class="btn-secondary"/>
                 </footer>
             </form>
         </field>
