@@ -31,6 +31,11 @@ class property(models.Model):
 
     ]
 
+    def action_open_change_state_wizard(self):
+        action = self.env['ir.actions.actions']._for_xml_id('model_a.action_confirm')
+        action['context'] = {'defualt_property_id':self.id}
+        return action
+
     def action_draft(self):
         for rec in self:
             rec.state = 'draft'

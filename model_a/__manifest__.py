@@ -10,12 +10,13 @@
         'views/jobs_view.xml',
         'views/property_view.xml',
         'views/hr_view.xml',
-        'data\sequence.xml'
+        'data\sequence.xml',
+        'wizard\change_state_view.xml'
 
     ],
     'assets':{
         'web.assets_backend':[
-            'model_a\static\src\css\property.css'
+        'model_a\static\src\css\property.css'
         ]
     },
 
