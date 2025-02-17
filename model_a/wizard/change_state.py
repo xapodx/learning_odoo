@@ -13,4 +13,4 @@ class ChangeState(models.TransientModel):
     reason = fields.Char()
 
     def action_confirm(self):
-        print("inside confirm")
+        self.property_id=self.state

@@ -6,11 +6,11 @@
         <field name="model">state</field>
         <field name="arch" type="xml">
             <form>
-              <gorup>
+              <group>
                   <field name="property_id" invisible="1"/>
-                  <field name="state"  required="1" label="state"/>
-                  <field name="reason" required="1">reason</field>
-              </gorup>
+                  <field name="state"  required="1"/>
+                  <field name="reason" required="1"/>
+              </group>
                 <footer>
                     <button string="Confirm" type="object" name="action_confirm" class="btn-primary"/>
                     <button string="Cancel" special="cancel" class="btn-secondary"/>
