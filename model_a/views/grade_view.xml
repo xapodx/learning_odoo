@@ -34,7 +34,7 @@
                 <sheet>
                     <header>
                         <button name="action_draft" type="object" class="btn-primary" string="Set To Draft"
-                                invisible="state == 'draft'"/>
+                                invisible="state == 'draft' or state =='approved'"/>
                         <button name="action_pending" type="object" class="btn-secondary" string="Set To Pending"
                                 invisible="state != 'draft' "/>
                         <button name="action_approved" type="object" class="btn-success" string="Set To Approved"
