@@ -71,17 +71,24 @@ class grade(models.Model):
         print("inside")
         return res
 
-    @api.model #read fonk
-    def _search(self,domain,offset=0,limit=None,order=None,access_rights_uid=None):
-        res = super(grade, self)._search(domain,offset=0,limit=None,order=None,access_rights_uid=None)
-        print("inside, from search")
-        return res
+    # @api.model #read fonk
+    # def _search(self,domain,offset=0,limit=None,order=None,access_rights_uid=None):
+    #     res = super(grade, self)._search(domain,offset=0,limit=None,order=None,access_rights_uid=None)
+    #     print("inside, from search")
+    #     return res
 
 
     def write(self,vals): #update fonk
         res=super(grade,self).write(vals)
         print("inside, from write")
         return res
+
+    def action(self):
+        grade_records = self.env['grade'].search([])  # Fetch all grade records
+
+        # Iterate over each record and print its details
+        for record in grade_records:
+            print(f"Grade ID: {record.id}, Name: {record.name}")
 
     def unlink(self): #delet fonk
         res=super(grade,self).unlink()
