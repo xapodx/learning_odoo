@@ -11,7 +11,7 @@ class jobs(models.Model):
 
 
     name = fields.Char(string="name",required=1)
-    grade_id=fields.Many2one('property', required=True)
+    grade_id=fields.Many2one('grade', required=True)
     shift=fields.Boolean(default=False)
 
     _sql_constraints = [

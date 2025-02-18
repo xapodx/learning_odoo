@@ -1,0 +1,5 @@
+<odoo>
+    <record id="grade_manager_group" model="res.groups">
+        <field name="name">grade manager</field>
+    </record>
+</odoo>

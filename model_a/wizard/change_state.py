@@ -5,7 +5,7 @@ class ChangeState(models.TransientModel):
     _name = 'state'
 
 
-    property_id = fields.Many2one('property', string='Property')
+    grade_id = fields.Many2one('grade', string='Grade')
     state = fields.Selection([
         ('draft', 'Draft'),
         ('pending', 'Pending'),

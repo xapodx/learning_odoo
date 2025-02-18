@@ -1,18 +1,18 @@
 <odoo>
     <menuitem
-    id="real_state_root_menu"
-    name="Real Estate"
+    id="grade_system_root_menu"
+    name="Grade System"
     web_icon="model_a,static\description\icon.png"
     />
     <menuitem
-    id="properties_menu"
-    name="Propertis"
-    parent="real_state_root_menu"
+    id="grades_menu"
+    name="Grades"
+    parent="grade_system_root_menu"
     />
     <menuitem
     id="jobs_menu"
     name="Jobs"
-    parent="real_state_root_menu"
+    parent="grade_system_root_menu"
     />
 
 </odoo>

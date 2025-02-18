@@ -6,11 +6,11 @@ from odoo.exceptions import ValidationError
 from odoo.odoo.tools.populate import compute
 
 
-class property(models.Model):
+class grade(models.Model):
 
-    _name = 'property'
+    _name = 'grade'
     _inherit = ['mail.thread']
-    _description = 'Property'
+    _description = 'Grade System'
 
     name = fields.Char(string="Name",required=1)
     housing = fields.Float(default=250)
@@ -67,23 +67,23 @@ class property(models.Model):
 
     @api.model_create_multi
     def create(self,vals):
-        res = super(property, self).create(vals)
+        res = super(grade, self).create(vals)
         print("inside")
         return res
 
     @api.model #read fonk
     def _search(self,domain,offset=0,limit=None,order=None,access_rights_uid=None):
-        res = super(property, self)._search(domain,offset=0,limit=None,order=None,access_rights_uid=None)
+        res = super(grade, self)._search(domain,offset=0,limit=None,order=None,access_rights_uid=None)
         print("inside, from search")
         return res
 
 
     def write(self,vals): #update fonk
-        res=super(property,self).write(vals)
+        res=super(grade,self).write(vals)
         print("inside, from write")
         return res
 
     def unlink(self): #delet fonk
-        res=super(property,self).unlink()
+        res=super(grade,self).unlink()
         print("inside, unlink write")
         return res

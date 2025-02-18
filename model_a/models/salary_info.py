@@ -6,7 +6,7 @@ class Salary(models.Model):
     _inherit = ['mail.thread']
 
     name = fields.Char(string="Name", required=True)
-    grade_id = fields.Many2one('property', required=True)
+    grade_id = fields.Many2one('grade', required=True)
     shift = fields.Boolean(default=False)
     employee_id = fields.Many2one('hr.employee', string="Employee")
 
