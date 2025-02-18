@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-17 11:58+0000\n"
-"PO-Revision-Date: 2025-02-17 11:58+0000\n"
+"POT-Creation-Date: 2025-02-18 10:59+0000\n"
+"PO-Revision-Date: 2025-02-18 10:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -31,8 +31,8 @@ msgid " Valid"
 msgstr "سارية"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_needaction
 #: model:ir.model.fields,field_description:model_a.field_jobs__message_needaction
-#: model:ir.model.fields,field_description:model_a.field_property__message_needaction
 #: model:ir.model.fields,field_description:model_a.field_salary__message_needaction
 msgid "Action Needed"
 msgstr "الإجراء مطلوب"
@@ -41,29 +41,28 @@ msgstr "الإجراء مطلوب"
 #: model_terms:ir.ui.view,arch_db:model_a.view_employee_form_inherit
 msgid "Allowances"
 msgstr "البدلات"
-
 #. module: model_a
-#: model:ir.model.fields.selection,name:model_a.selection__property__state__approved
+#: model:ir.model.fields.selection,name:model_a.selection__grade__state__approved
 msgid "Approved"
-msgstr "موافقة"
+msgstr "موافق"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_attachment_count
 #: model:ir.model.fields,field_description:model_a.field_jobs__message_attachment_count
-#: model:ir.model.fields,field_description:model_a.field_property__message_attachment_count
 #: model:ir.model.fields,field_description:model_a.field_salary__message_attachment_count
 msgid "Attachment Count"
 msgstr "عدد المرفقات"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__bouns
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__bouns_allowance
-#: model:ir.model.fields,field_description:model_a.field_property__bouns
 msgid "Bouns"
 msgstr "المكافآت"
 
 #. module: model_a
-#: model:ir.model.constraint,message:model_a.constraint_property_unique_bouns
+#: model:ir.model.constraint,message:model_a.constraint_grade_unique_bouns
 msgid "Bouns must be unique!"
-msgstr "يجب أن تكون المكافآت فريدة!"
+msgstr "المكافآت يجب أن تكون فريدة!"
 
 #. module: model_a
 #: model_terms:ir.ui.view,arch_db:model_a.change_state_view_form
@@ -71,7 +70,7 @@ msgid "Cancel"
 msgstr "إلغاء"
 
 #. module: model_a
-#: model:ir.actions.server,name:model_a.property_change_state_sever_action
+#: model:ir.actions.server,name:model_a.grade_change_state_sever_action
 msgid "Change State"
 msgstr "تغيير الحالة"
 
@@ -86,34 +85,40 @@ msgid "Confirm"
 msgstr "تأكيد"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__create_uid
 #: model:ir.model.fields,field_description:model_a.field_jobs__create_uid
-#: model:ir.model.fields,field_description:model_a.field_property__create_uid
 #: model:ir.model.fields,field_description:model_a.field_salary__create_uid
 #: model:ir.model.fields,field_description:model_a.field_state__create_uid
 msgid "Created by"
 msgstr "تم الإنشاء بواسطة"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__create_date
 #: model:ir.model.fields,field_description:model_a.field_jobs__create_date
-#: model:ir.model.fields,field_description:model_a.field_property__create_date
 #: model:ir.model.fields,field_description:model_a.field_salary__create_date
 #: model:ir.model.fields,field_description:model_a.field_state__create_date
 msgid "Created on"
 msgstr "تاريخ الإنشاء"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__display_name
 #: model:ir.model.fields,field_description:model_a.field_jobs__display_name
-#: model:ir.model.fields,field_description:model_a.field_property__display_name
 #: model:ir.model.fields,field_description:model_a.field_salary__display_name
 #: model:ir.model.fields,field_description:model_a.field_state__display_name
 msgid "Display Name"
 msgstr "اسم العرض"
 
 #. module: model_a
-#: model:ir.model.fields.selection,name:model_a.selection__property__state__draft
+#: model:ir.model.fields.selection,name:model_a.selection__grade__state__draft
 #: model:ir.model.fields.selection,name:model_a.selection__state__state__draft
 msgid "Draft"
 msgstr "مسودة"
+
+#. module: model_a
+#: model:ir.model,name:model_a.model_hr_employee
+#: model:ir.model.fields,field_description:model_a.field_salary__employee_id
+msgid "Employee"
+msgstr "الموظف"
 
 #. module: model_a
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__employee_ref
@@ -121,15 +126,15 @@ msgid "Employee Reference"
 msgstr "مرجع الموظف"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_follower_ids
 #: model:ir.model.fields,field_description:model_a.field_jobs__message_follower_ids
-#: model:ir.model.fields,field_description:model_a.field_property__message_follower_ids
 #: model:ir.model.fields,field_description:model_a.field_salary__message_follower_ids
 msgid "Followers"
 msgstr "المتابعون"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_partner_ids
 #: model:ir.model.fields,field_description:model_a.field_jobs__message_partner_ids
-#: model:ir.model.fields,field_description:model_a.field_property__message_partner_ids
 #: model:ir.model.fields,field_description:model_a.field_salary__message_partner_ids
 msgid "Followers (Partners)"
 msgstr "المتابعون (الشركاء)"
@@ -138,174 +143,278 @@ msgstr "المتابعون (الشركاء)"
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__grade_id
 #: model:ir.model.fields,field_description:model_a.field_jobs__grade_id
 #: model:ir.model.fields,field_description:model_a.field_salary__grade_id
+#: model:ir.model.fields,field_description:model_a.field_state__grade_id
 msgid "Grade"
 msgstr "الدرجة"
 
 #. module: model_a
+#: model:ir.actions.act_window,name:model_a.grade_action
+msgid "Grade Action"
+msgstr "إجراء الدرجة"
+
+#. module: model_a
+#: model:ir.model,name:model_a.model_grade
+#: model:ir.ui.menu,name:model_a.grade_system_root_menu
+msgid "Grade System"
+msgstr "نظام الدرجات"
+
+#. module: model_a
+#: model:ir.ui.menu,name:model_a.grade_menu_item
+#: model:ir.ui.menu,name:model_a.grades_menu
+msgid "Grades"
+msgstr "الدرجات"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__has_message
 #: model:ir.model.fields,field_description:model_a.field_jobs__has_message
-#: model:ir.model.fields,field_description:model_a.field_property__has_message
 #: model:ir.model.fields,field_description:model_a.field_salary__has_message
 msgid "Has Message"
 msgstr "لديه رسالة"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__housing
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__housing_allowance
-#: model:ir.model.fields,field_description:model_a.field_property__housing
 msgid "Housing"
 msgstr "السكن"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__id
 #: model:ir.model.fields,field_description:model_a.field_jobs__id
-#: model:ir.model.fields,field_description:model_a.field_property__id
 #: model:ir.model.fields,field_description:model_a.field_salary__id
 #: model:ir.model.fields,field_description:model_a.field_state__id
 msgid "ID"
 msgstr "المعرف"
 
 #. module: model_a
+#: model:ir.model.fields,help:model_a.field_grade__message_needaction
+#: model:ir.model.fields,help:model_a.field_jobs__message_needaction
+#: model:ir.model.fields,help:model_a.field_salary__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، فإن الرسائل الجديدة تتطلب اهتمامك."
+#. module: model_a
+#: model:ir.model.fields,help:model_a.field_grade__message_has_error
+#: model:ir.model.fields,help:model_a.field_grade__message_has_sms_error
+#: model:ir.model.fields,help:model_a.field_jobs__message_has_error
+#: model:ir.model.fields,help:model_a.field_jobs__message_has_sms_error
+#: model:ir.model.fields,help:model_a.field_salary__message_has_error
+#: model:ir.model.fields,help:model_a.field_salary__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، فإن بعض الرسائل تحتوي على خطأ في التسليم."
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_is_follower
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_is_follower
+#: model:ir.model.fields,field_description:model_a.field_salary__message_is_follower
+msgid "Is Follower"
+msgstr "هل هو متابع"
+
+#. module: model_a
+#: model:ir.actions.act_window,name:model_a.jobs_action
+#: model:ir.ui.menu,name:model_a.jobs_menu
+#: model:ir.ui.menu,name:model_a.jobs_menu_item
+msgid "Jobs"
+msgstr "الوظائف"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__write_uid
+#: model:ir.model.fields,field_description:model_a.field_jobs__write_uid
+#: model:ir.model.fields,field_description:model_a.field_salary__write_uid
+#: model:ir.model.fields,field_description:model_a.field_state__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__write_date
+#: model:ir.model.fields,field_description:model_a.field_jobs__write_date
+#: model:ir.model.fields,field_description:model_a.field_salary__write_date
+#: model:ir.model.fields,field_description:model_a.field_state__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__mediacl
+msgid "Mediacl"
+msgstr "طبي"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_hr_employee__medical_allowance
+msgid "Medical"
+msgstr "طبي"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_has_error
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_has_error
+#: model:ir.model.fields,field_description:model_a.field_salary__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_ids
 #: model:ir.model.fields,field_description:model_a.field_jobs__message_ids
-#: model:ir.model.fields,field_description:model_a.field_property__message_ids
 #: model:ir.model.fields,field_description:model_a.field_salary__message_ids
 msgid "Messages"
 msgstr "الرسائل"
 
 #. module: model_a
-#: model:ir.model.fields,field_description:model_a.field_property__name
+#: model:ir.model.fields,field_description:model_a.field_grade__name
 #: model:ir.model.fields,field_description:model_a.field_salary__name
 msgid "Name"
 msgstr "الاسم"
 
 #. module: model_a
-#: model:ir.model.fields.selection,name:model_a.selection__property__state__pending
+#: model:ir.model.constraint,message:model_a.constraint_grade_unique_name
+#: model:ir.model.constraint,message:model_a.constraint_jobs_unique_name
+#: model:ir.model.constraint,message:model_a.constraint_salary_unique_name
+msgid "Name must be unique!"
+msgstr "يجب أن يكون الاسم فريدًا!"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_needaction_counter
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_needaction_counter
+#: model:ir.model.fields,field_description:model_a.field_salary__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_has_error_counter
+#: model:ir.model.fields,field_description:model_a.field_jobs__message_has_error_counter
+#: model:ir.model.fields,field_description:model_a.field_salary__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: model_a
+#: model:ir.model.fields,help:model_a.field_grade__message_needaction_counter
+#: model:ir.model.fields,help:model_a.field_jobs__message_needaction_counter
+#: model:ir.model.fields,help:model_a.field_salary__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: model_a
+#: model:ir.model.fields,help:model_a.field_grade__message_has_error_counter
+#: model:ir.model.fields,help:model_a.field_jobs__message_has_error_counter
+#: model:ir.model.fields,help:model_a.field_salary__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي تحتوي على خطأ في التسليم"
+
+#. module: model_a
+#: model:ir.model.fields.selection,name:model_a.selection__grade__state__pending
 #: model:ir.model.fields.selection,name:model_a.selection__state__state__pending
 msgid "Pending"
 msgstr "قيد الانتظار"
 
 #. module: model_a
-#: model:ir.ui.menu,name:model_a.property_ment_item
-msgid "Properties"
-msgstr "العقارات"
-
-#. module: model_a
-#: model:ir.ui.menu,name:model_a.real_state_root_menu
-msgid "Real Estate"
-msgstr "العقارات"
-
-
-
-#. module: model_a
 #: model:ir.model.fields,field_description:model_a.field_state__reason
 msgid "Reason"
-msgstr ""
+msgstr "السبب"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__message_has_sms_error
 #: model:ir.model.fields,field_description:model_a.field_jobs__message_has_sms_error
-#: model:ir.model.fields,field_description:model_a.field_property__message_has_sms_error
 #: model:ir.model.fields,field_description:model_a.field_salary__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "خطأ في تسليم الرسائل النصية"
 
 #. module: model_a
 #: model:ir.model,name:model_a.model_salary
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__salary
 msgid "Salary"
-msgstr ""
+msgstr "الراتب"
 
 #. module: model_a
 #: model_terms:ir.ui.view,arch_db:model_a.view_employee_form_inherit
 msgid "Salary Details"
-msgstr ""
+msgstr "تفاصيل الراتب"
 
 #. module: model_a
 #: model_terms:ir.ui.view,arch_db:model_a.view_employee_form_inherit
 msgid "Salary Info"
-msgstr ""
+msgstr "معلومات الراتب"
 
 #. module: model_a
-#: model_terms:ir.ui.view,arch_db:model_a.property_view_form
+#: model_terms:ir.ui.view,arch_db:model_a.grade_view_form
 msgid "Set To Approved"
-msgstr ""
+msgstr "تعيين كمعتمد"
 
 #. module: model_a
-#: model_terms:ir.ui.view,arch_db:model_a.property_view_form
+#: model_terms:ir.ui.view,arch_db:model_a.grade_view_form
 msgid "Set To Draft"
-msgstr ""
+msgstr "تعيين كمسودة"
 
 #. module: model_a
-#: model_terms:ir.ui.view,arch_db:model_a.property_view_form
+#: model_terms:ir.ui.view,arch_db:model_a.grade_view_form
 msgid "Set To Pending"
-msgstr ""
+msgstr "تعيين كقيد الانتظار"
 
 #. module: model_a
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__shift
 #: model:ir.model.fields,field_description:model_a.field_jobs__shift
 #: model:ir.model.fields,field_description:model_a.field_salary__shift
 msgid "Shift"
-msgstr ""
+msgstr "الوردية"
 
 #. module: model_a
-#: model:ir.model.fields,field_description:model_a.field_property__state
+#: model:ir.model.fields,field_description:model_a.field_grade__state
 #: model:ir.model.fields,field_description:model_a.field_state__state
 msgid "State"
-msgstr ""
+msgstr "الحالة"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__total
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__total
-#: model:ir.model.fields,field_description:model_a.field_property__total
 msgid "Total"
-msgstr ""
+msgstr "الإجمالي"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__transport
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__transport_allowance
-#: model:ir.model.fields,field_description:model_a.field_property__transport
 msgid "Transport"
-msgstr ""
+msgstr "النقل"
 
 #. module: model_a
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__visa_expire
 msgid "Visa Expiry Date"
-msgstr "تاريخ انتهاء صلاحية التأشيرة "
+msgstr "تاريخ انتهاء صلاحية التأشيرة"
 
 #. module: model_a
 #: model:ir.model.fields,field_description:model_a.field_hr_employee__visa_status
 msgid "Visa Status"
-msgstr ""
+msgstr "حالة التأشيرة"
 
 #. module: model_a
+#: model:ir.model.fields,field_description:model_a.field_grade__website_message_ids
 #: model:ir.model.fields,field_description:model_a.field_jobs__website_message_ids
-#: model:ir.model.fields,field_description:model_a.field_property__website_message_ids
 #: model:ir.model.fields,field_description:model_a.field_salary__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "رسائل الموقع"
 
 #. module: model_a
+#: model:ir.model.fields,help:model_a.field_grade__website_message_ids
 #: model:ir.model.fields,help:model_a.field_jobs__website_message_ids
-#: model:ir.model.fields,help:model_a.field_property__website_message_ids
 #: model:ir.model.fields,help:model_a.field_salary__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "سجل التواصل عبر الموقع"
 
 #. module: model_a
 #: model:ir.actions.act_window,name:model_a.action_confirm
 msgid "change state"
-msgstr ""
+msgstr "تغيير الحالة"
+
+#. module: model_a
+#: model:res.groups,name:model_a.grade_manager_group
+msgid "grade manager"
+msgstr "مدير الدرجات"
 
 #. module: model_a
 #: model:ir.model,name:model_a.model_jobs
 msgid "jobs"
-msgstr ""
+msgstr "الوظائف"
 
 #. module: model_a
 #: model:ir.model.fields,field_description:model_a.field_jobs__name
 msgid "name"
-msgstr ""
-
-#. module: model_a
-#: model:ir.actions.act_window,name:model_a.property_action
-msgid "property action"
-msgstr ""
+msgstr "الاسم"
 
 #. module: model_a
 #: model:ir.model,name:model_a.model_state
 msgid "state"
-msgstr ""
+msgstr "الحالة"
