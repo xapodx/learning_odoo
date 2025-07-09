@@ -12,10 +12,10 @@ class HrEmployee(models.Model):
     grade_id = fields.Many2one('property')
 
     # Using the related field to link allowances to the 'grade_id'
-    medical_allowance = fields.Float(related='grade_id.mediacl', string="Medical")
+    medical_allowance = fields.Float(related='grade_id.medical', string="Medical")
     transport_allowance = fields.Float(related='grade_id.transport', string="Transport")
     housing_allowance = fields.Float(related='grade_id.housing', string="Housing")
-    bouns_allowance = fields.Integer(related='grade_id.bouns', string="Bouns")
+    bonus_allowance = fields.Integer(related='grade_id.bonus', string="Bonus")
     total = fields.Float(compute='_compute_total', store=True, readonly=1)
     visa_expire = fields.Date(string="Visa Expiry Date")
     visa_status = fields.Selection([
