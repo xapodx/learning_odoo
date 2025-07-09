@@ -9,13 +9,14 @@ class HrEmployee(models.Model):
     employee_ref = fields.Char(string="Employee Reference", readonly=True, copy=False, default='New')
     salary = fields.Float()
     shift = fields.Boolean(string="Shift", default=False)
-    grade_id = fields.Many2one('property')
+    grade_id = fields.Many2one('hr.grade', string="Employee Grade")
 
     # Using the related field to link allowances to the 'grade_id'
-    medical_allowance = fields.Float(related='grade_id.mediacl', string="Medical")
-    transport_allowance = fields.Float(related='grade_id.transport', string="Transport")
-    housing_allowance = fields.Float(related='grade_id.housing', string="Housing")
-    bouns_allowance = fields.Integer(related='grade_id.bouns', string="Bouns")
+    medical_allowance = fields.Float(related='grade_id.allowance_medical', string="Medical")
+    transport_allowance = fields.Float(related='grade_id.allowance_transport', string="Transport")
+    housing_allowance = fields.Float(related='grade_id.allowance_housing', string="Housing")
+    food_allowance = fields.Float(related='grade_id.allowance_food', string="Food")
+    bonus_percentage = fields.Float(related='grade_id.bonus_percentage', string="Bonus %")
     total = fields.Float(compute='_compute_total', store=True, readonly=1)
     visa_expire = fields.Date(string="Visa Expiry Date")
     visa_status = fields.Selection([
@@ -35,12 +36,21 @@ class HrEmployee(models.Model):
         return super(HrEmployee, self).create(vals)
 
     # Computing the total salary
-    @api.depends('housing_allowance', 'transport_allowance', 'medical_allowance', 'salary', 'shift')
+    @api.depends('housing_allowance', 'transport_allowance', 'medical_allowance', 'food_allowance', 'salary', 'shift', 'bonus_percentage')
     def _compute_total(self):
         for rec in self:
-            rec.total = rec.housing_allowance + rec.medical_allowance + rec.transport_allowance + rec.salary
+            base_total = (rec.housing_allowance + rec.medical_allowance + 
+                         rec.transport_allowance + rec.food_allowance + rec.salary)
+            
+            # Add bonus percentage
+            if rec.bonus_percentage:
+                base_total += (rec.salary * rec.bonus_percentage / 100)
+            
+            # Add shift allowance
             if rec.shift:
-                rec.total += 2500  # Add 2500 if the shift is True
+                base_total += 2500  # Add 2500 if the shift is True
+                
+            rec.total = base_total
 
     # Computing the visa status based on the expiration date
     @api.depends('visa_expire')

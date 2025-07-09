@@ -63,7 +63,8 @@
                             <field name="medical_allowance"/>
                             <field name="transport_allowance"/>
                             <field name="housing_allowance"/>
-                            <field name="bouns_allowance"/>
+                            <field name="food_allowance"/>
+                            <field name="bonus_percentage"/>
                         </group>
                     </group>
                     </group>
