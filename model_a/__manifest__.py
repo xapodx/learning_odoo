@@ -9,6 +9,7 @@
         'views/base_menu.xml',
         'views/jobs_view.xml',
         'views/property_view.xml',
+        'views/hr_grade_view.xml',
         'views/hr_view.xml',
         'data\sequence.xml'
 
